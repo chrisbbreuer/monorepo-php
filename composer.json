@@ -1,6 +1,6 @@
 {
   "name": "monorepo-example/laravel",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "project",
   "description": "Monorepo containing three packages",
   "keywords": [
