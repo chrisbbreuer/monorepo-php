@@ -6,15 +6,12 @@ const { version } = JSON.parse(fs.readFileSync(packagePath, {
     encoding: 'utf8'
 }));
 
-console.log("package.json: ", version);
-
 const composerPath = path.join(__dirname, 'composer.json');
 const composer = JSON.parse(fs.readFileSync(composerPath, {
     encoding: 'utf8'
 }));
 
 composer.version = version;
-console.log("composer.json: ", version);
 
 fs.writeFileSync(composerPath, JSON.stringify(composer, null, 2));
 
@@ -31,7 +28,6 @@ const packages = packageDirs.map(async packageDir => {
     }));
 
     packageComposer.version = version;
-    console.log("package: " + packageDir, "version: " + packageComposer.version);
     fs.writeFileSync(packageComposerPath, JSON.stringify(packageComposer, null, 2));
 });
 
