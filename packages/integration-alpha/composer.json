@@ -1,0 +1,34 @@
+{
+  "name": "monorepo-example/integration-alpha",
+  "version": "1.0.0",
+  "description": "Package Alpha",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "MonorepoExample\\IntegrationAlpha\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "./vendor/bin/pest --parallel --testdox"
+    ],
+    "lint": [
+      "../../vendor/bin/pint --test"
+    ],
+    "commit": "npm run commit"
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "pestphp/pest": "^2.6"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "packages": [
+        {
+            "name": "monorepo-example/integration-alpha",
+            "path": "packages/integration-alpha"
+        },
+        {
+            "name": "monorepo-example/integration-beta",
+            "path": "packages/integration-beta"
+        },
+        {
+            "name": "monorepo-example/integration-charlie",
+            "path": "packages/integration-charlie"
+        }
+    ]
+}
