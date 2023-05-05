@@ -1,12 +1,12 @@
 {
     "name": "monorepo-example",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "private": true,
     "scripts": {
         "dev": "vite",
         "build": "vite build",
         "commit": "git-cz",
-        "release": "bumpp -x \"node bump.js ; npm run changelog\" --all ",
+        "release": "bumpp -x \"node bump.js ; npm run changelog\" --all",
         "changelog": "changelogen"
     },
     "devDependencies": {
